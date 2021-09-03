@@ -1,0 +1,18 @@
+def overlap_finder(fasta_file, overlap_length):
+    
+    from Bio import SeqIO
+    
+    fasta_sequences = list(SeqIO.parse(fasta_file,'fasta'))
+    
+    for seq1 in fasta_sequences:
+        for seq2 in fasta_sequences:
+            
+            name1, sequence1 = seq1.id, str(seq1.seq)
+            name2, sequence2 = seq2.id, str(seq2.seq)
+            
+            if sequence1 == sequence2 :
+                continue 
+                
+            if sequence1[-overlap_length:] == sequence2[:overlap_length]:
+                
+                print(name1, name2)
