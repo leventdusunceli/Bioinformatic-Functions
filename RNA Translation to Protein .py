@@ -54,7 +54,8 @@ def RNA_Translator(RNA_seq):
     return(protein_sequence)
 
 
-# ### Alternatively, you can define 2 functions, one for codon separation and one for translation.  This method would be particularly useful if you aim to do other manupulations with just the codons of the sequence. 
+## Alternatively, you can define 2 functions, one for codon separation and one for translation.  
+## This method would be particularly useful if you aim to do other manupulations with just the codons of the sequence. 
 
 # In[3]:
 
@@ -88,10 +89,3 @@ def RNA_Translator2 (RNA_seq):
             protein_sequence +=(aa_dict[codons2[i]])
             
     return(protein_sequence)
-
-
-# In[ ]:
-
-
-
-
