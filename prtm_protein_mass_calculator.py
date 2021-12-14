@@ -7,7 +7,7 @@ def protein_mass_calculator(protein_string):
                         "V" : 99.06841, "W" : 186.07931, "Y" : 163.06333, }
   liste = []
   for i in protein_string: 
-
+    
     if i in protein_mass_table.keys(): 
       liste.append(protein_mass_table[i])
 
