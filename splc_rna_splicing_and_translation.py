@@ -74,4 +74,5 @@ def rna_splicer (filename):
   rna_string = transcriber(mature_DNA)
   protein_sequence = RNA_Translator(rna_string)
 
+
   return protein_sequence
