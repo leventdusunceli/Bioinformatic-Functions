@@ -1,0 +1,19 @@
+[project]
+name = "Bioinformatic_Functions"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "leventdusunceli", email = "leventdusunceli98@gmail.com"},
+]
+dependencies = ["pandas>=2.2.3"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
